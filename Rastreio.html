@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Rastreio</title>
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="/Assets/photos/VL Imports _ Arquivos/Logo Horizontal/Light Blue Horizontal Logo.png" alt=""></a></div>
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <img src="/Assets/photos/VL Imports _ Arquivos/Logo Horizontal/Light Blue Horizontal Logo.png" alt="">
+                    <i class="bx bx-x"></i>
+                </div>
+                <ul class="links">
+                    <li><a href="/index.html">Home</a></li>
+                    
+                    <li>
+                        <a href="#">Catálogo</a>
+                        <i class='bx bxs-chevron-down arrow catalogo-arrow'></i>
+                        <ul class="cata-sub-menu sub-menu">
+                            <li><a href="/Camisas.html" target="_blank">Camisas</a></li>
+                            <li><a href="/Tenis.html" target="_blank">Calçados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#">Rastreio de Produtos</a></li>
+                    <li><a href="/revendedor.html">Seja Revendedor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- INICIO CODIGO RASTREIO DE PEDIDOS --> 
+<style> 
+
+.rastreio {
+    position: relative;
+    width: 100%;
+    height: 85.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rastreio input[type=text] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      box-shadow: none;
+      border-radius: .375rem;
+      border: 1px solid;
+    }
+    
+    .rastreio input[type=button] {
+      color: #fff;
+      background-color: #335eea;
+      border-color: #335eea;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      box-shadow: none;
+      border-radius: .375rem;
+      border: 1px solid transparent;
+    }
+</style>
+    
+    <section class="rastreio">
+        <p style="font-weight: bold; text-align: center; font-size: 22px; margin: 20px;">Insira seu número de rastreamento abaixo.</p>
+    <div style="text-align: center;">
+     <input type="text" id="YQNum" maxlength="50" placeholder="LO235569205CN" />
+     <input type="button" value="Buscar" onclick="doTrack()" />
+    <br>
+    <br>
+    <div id="YQContainer"></div>
+    
+    <script type="text/javascript" src="//www.17track.net/externalcall.js"></script>
+    <script type="text/javascript">// <![CDATA[
+    function doTrack() {
+    var num = document.getElementById("YQNum").value;
+    if(num===""){
+    alert("Digite o seu código de rastreio.");
+    Retorna;
+    }
+    YQV5.trackSingle({
+    YQ_ContainerId:"YQContainer",
+    YQ_Height:800,
+    YQ_Fc:"0",
+    YQ_Lang:"pt-br",
+    YQ_Num:num
+    });
+    }
+    // ]]></script>
+    <!-- FIM CODIGO RASTREIO DE PEDIDOS -->
+
+    </section>
+    
+    <footer>
+        <div id="contact" class="footer-content">
+            <div class="footer-contacts">
+                <img class="logo-footer" src="/Assets/photos/VL Imports _ Arquivos/Logo Horizontal/VL Horizontal White Logo.png" alt="">
+                <p>Levanta sua autoestima com <br/>camisas de time e calçados🔥✅</p>
+
+                <div class="footer-social-media">
+                    <a href="https://www.instagram.com/vanlumeimports_/" target="_blank" class="footer-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/@vanlumeimports?lang=pt-BR" class="footer-link"><i class='bx bxl-tiktok' ></i></a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Menu</h3>
+                </li>
+                <li>
+                    <a href="/index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="/Camisas.html" class="footer-link">Camisas</a>
+                </li>
+                <li>
+                    <a href="/Tenis.html" class="footer-link">Calçados</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Rastreio de Produtos</a>
+                </li>
+                <li>
+                    <a href="/revendedor.html" class="footer-link">Seja Revendedor</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li><h3>Contatos</h3></li> 
+                <li class="footer-link-contact"><a href="HTTPS://wa.me/5581987221825?text=Ola+Pedro,+venho+do+site+e+Teria+interesse+nos+seus+produtos!" target="_blank"><i class='bx bxl-whatsapp' ></i><p>(81) 9 87221825</p></a></li>
+                <li class="footer-link-contact"><a href="HTTPS://wa.me/5581992558637?text=Ola+João,+venho+do+site+e+Teria+interesse+nos+seus+produtos!" target="_blank"><i class='bx bxl-whatsapp' ></i><p>(81) 9 92558637</p></a></li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h3>Fale Conosco</h3>
+                <p>Complete o formulário e responderemos em até 24h</p>
+                <form action="https://formsubmit.co/vanlumeimports@gmail.com" method="POST">
+                    <input type="text" name="Nome" placeholder="Nome" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="tel" name="Telefone" placeholder="(99) 9999-9999" required>
+                    <textarea name="Mensagem" placeholder="Escreva o modelo do produto que deseja..."></textarea>
+                    <input class="submit" type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+        <div class="Copyright">
+            <p>Developed Pedro Van-Lume</p>
+            <h1>Copyright<i class='bx bx-copyright' ></i></h1>
+        </div>
+    </footer>
+    <script src="/Assets/js/script.js"></script>
+</body>
+</html>

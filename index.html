@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van-Lume Imports</title>
+    <link  rel = "shortcut icon" href ="/Assets/photos/Light-Blue-Symbol.ico" type ="image/x-icon">
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+     <!-- Link Banner -->
+     <link rel="stylesheet" href="/Assets/CSS/Home/Banner/Banner.css">
+     <!-- Link Segurança -->
+     <link rel="stylesheet" href="/Assets/CSS/Home/Seguranca/Seguranca.css">
+     <!-- Link Beneficios -->
+     <link rel="stylesheet" href="/Assets/CSS/Home/Beneficios/Beneficios.css">
+     <!-- Link Tipos -->
+     <link rel="stylesheet" href="/Assets/CSS/Home/Types/Type.css">
+     <!-- Link Duvidas -->
+     <link rel="stylesheet" href="/Assets/CSS/Home/Duvidas/Duvidas.css">
+     <!-- Link Testemonial -->
+     <link rel="stylesheet" href="/Assets/CSS/Home/Testemonial/Testemonial.css">
+     <!-- Link Contatos -->
+     <link rel="stylesheet" href="/Assets/CSS/Contatos/contatos.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="/Assets/photos/VL Imports _ Arquivos/Logo Horizontal/Light Blue Horizontal Logo.png" alt=""></a></div>
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <img src="/Assets/photos/VL Imports _ Arquivos/Logo Horizontal/Light Blue Horizontal Logo.png" alt="">
+                    <i class="bx bx-x"></i>
+                </div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    
+                    <li>
+                        <a href="#">Catálogo</a>
+                        <i class='bx bxs-chevron-down arrow catalogo-arrow'></i>
+                        <ul class="cata-sub-menu sub-menu">
+                            <li><a href="/Camisas.html" target="_blank">Camisas</a></li>
+                            <li><a href="/Tenis.html" target="_blank">Calçados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="/Rastreio.html">Rastreio de Produtos</a></li>
+                    <li><a href="/revendedor.html" >Seja Revendedor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="banner">
+            <div class="header-banner"><h2>Frete grátis para todo Brasil!</h2></div>
+            <div class="main-banner">
+                 <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="banner-pc" src="/Assets/photos/Banners/Promo.png" alt="">
+                        <img class="banner-mobile" src="/Assets/photos/Banners/Promo-mobile.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="banner-pc" src="/Assets/photos/Banners/Banner 2p1.png" alt="">
+                        <img class="banner-mobile" src="/Assets/photos/Banners/banner-2p1-mobile.png" alt="">
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                    </script>
+            </div>
+
+        </div>
+
+        <div class="offersSegurity">
+            <h2>O que a VL Imports pode oferecer á você?</h2>
+            <div class="seguranca">
+                <img src="/Assets/photos/Seg.png" alt="">
+                <div class="content-seg">
+                    <ul>
+                        <li><h4>Seu pedido entregue com <br/>segurança no conforto da sua casa!</h4></li>
+                        <li><i class='bx bx-map'></i><h3>Código de rastreio.</h3></li>
+                        <li><i class='bx bx-credit-card'></i><h3>Aceitamos todas as formas de pagamento.</h3></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="beneficios">
+            <div class="ben-card">
+                <i class='bx bx-like'></i>
+                <h4>Melhor qualidade e seguração para seus clientes</h4>
+            </div>
+            <div class="ben-card">
+                <i class='bx bxs-offer' ></i>
+                <h4>Coleções exclusivas</h4>
+            </div>
+            <div class="ben-card">
+                <i class='bx bx-purchase-tag'></i>
+                <h4>100% Atualizado!</h4>
+            </div>
+        </div>
+
+        <div class="tipos">
+            <div class="cards-type">
+                <div class="card-type">
+                    <a href="/Tenis.html" target="_blank"><img src="/Assets/photos/VL Imports _ Arquivos/Capas - Site/Tênis.png" alt=""></a>
+                    <h2>Tênis</h2>
+                </div>
+                <div class="card-type">
+                    <a href="/Camisas.html" target="_blank"><img src="/Assets/photos/VL Imports _ Arquivos/Capas - Site/Jogador.png" alt=""></a>
+                <h2>Modelo Jogador</h2>
+                </div>
+                <div class="card-type">
+                    <a href="/Camisas.html" target="_blank"><img src="/Assets/photos/VL Imports _ Arquivos/Capas - Site/Feminina.png" alt=""></a>
+                <h2>Modelo Feminina</h2>
+                </div>
+                <div class="card-type">
+                    <a href="/Camisas.html" target="_blank"><img src="/Assets/photos/VL Imports _ Arquivos/Capas - Site/Retrô.png" alt=""></a>
+                <h2>Modelo Retrô</h2>
+                </div>
+                <div class="card-type">
+                    <a href="/Camisas.html" target="_blank"><img src="/Assets/photos/VL Imports _ Arquivos/Capas - Site/Torcedor.png" alt=""></a>
+                <h2>Modelo Torcedor</h2>
+                </div>
+                <div class="card-type">
+                    <a href="/Camisas.html" target="_blank"><img src="/Assets/photos/VL Imports _ Arquivos/Capas - Site/NBA.jpeg" alt=""></a>
+                <h2>Modelo NBA</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="duvidas">
+            <div class="container">
+                <h1>Dúvidas mais frequentes?</h1>
+                <div class="tab">
+                    <input type="checkbox" name="acc1" id="acc1">
+                    <label for="acc1">
+                        <h2>01</h2>
+                        <h3>Como posso realizar o pagamento dos produtos que escolhi? Qual é o processo?</h3>
+                    </label>
+                    <div class="content">
+                        <p>Você pode realizar o pagamento entrando em contato pelo WhatsApp com alguns dos nossos atendentes. Eles estarão disponíveis para guiá-lo por todo o processo de pagamento e fornecer as informações necessárias para concluir a transação com facilidade.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" name="acc2" id="acc2">
+                    <label for="acc2">
+                        <h2>02</h2>
+                        <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    </label>
+                    <div class="content">
+                        <p>Esta pergunta ajuda a entender quais métodos de pagamento a loja aceita, incluindo cartões de débito, crédito em até 3x sem juros, pix ou outras opções. Isso é útil para você escolher a forma de pagamento mais conveniente.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" name="acc3" id="acc3">
+                    <label for="acc3">
+                        <h2>03</h2>
+                        <h3>Qual é a probabilidade de ser taxado ao comprar produtos da loja? Existe alguma taxa adicional que devo estar ciente?</h3>
+                    </label>
+                    <div class="content">
+                        <p>Atualmente, está sendo muito difícil ser taxado ao comprar conosco, pois nosso método de envio é super seguro. No entanto, é importante notar que ainda existe uma probabilidade mínima de ser taxado, embora seja rara. Estamos sempre trabalhando para garantir que nossos clientes tenham a melhor experiência possível.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" name="acc4" id="acc4">
+                    <label for="acc4">
+                        <h2>04</h2>
+                        <h3>Quais são as políticas de troca e devolução dos produtos?</h3>
+                    </label>
+                    <div class="content">
+                        <p>É importante conhecer as políticas de troca e devolução da loja para o caso de você precisar retornar um item ou trocá-lo por algum motivo. Isso inclui prazos, condições e processos para devoluções ou trocas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testemonial">
+            <div class="testi-content">
+                <img src="/Assets/photos/Reviews/review01.jpeg" class="image">
+                <div class="content-Reviews">
+                    <h2>@ducortexdp_</h2>
+                    <h3>Bruno - Pernambuco, Brasil</h3>
+                    <p>Mano, a camisa 100% confortável, um material muito bom, tem camisa que a pessoa compra e fica se corçando (eu fico se corçando) e fora o atendimento que é ótimo irmão, você sabe conversar e fechar acordo, tas aprovado de verdade! ✅❤️👊🏽</p>
+                </div>
+            </div>
+            <div class="testi-content">
+                <img src="/Assets/photos/Reviews/review02.jpeg" class="image">
+                <div class="content-Reviews">
+                    <h2>@081weezy</h2>
+                    <h3>Wesley Morais - Pernambuco, Brasil</h3>
+                    <p>Bom mano, eu tava precisando de um pisante brabo aí fui falar com arthurzinho e ele me indicou tua loja, e tipo, teu antendimento foi foda!!! Vc deu total atenção, O material do seu produto é muito bom e confortavel.</p>
+                </div>
+            </div>
+            <div class="testi-content">
+                <img src="/Assets/photos/Reviews/review03.jpeg" class="image">
+                <div class="content-Reviews">
+                    <h2>@kaiobr13</h2>
+                    <h3>Kaio Schoeneman - Lisboa, Portugal</h3>
+                    <p>Mais uma compra com a melhor da cidade, mais uma vez muito satisfeito com a compra! O casaco tem uma qualidade absurda e me surpreendeu com o quão confortável ele veste. Agradeço todo o cuidado e atenção que os vendedores tiveram comigo do momento da compra ate o momento da entrega.</p>
+                </div>
+            </div>
+
+            <div class="testi-content">
+                <img src="/Assets/photos/Reviews/review04.jpeg" class="image">
+                <div class="content-Reviews">
+                    <h2>@quinhowoods</h2>
+                    <h3>Henrique Woods - São Paulo, Brasil</h3>
+                    <p>Comprei uma daquela edição limitada da Escócia.
+                        Adorei o material e foi um valor acessível. Muito bom! Pretendo comprar de novo!</p>
+                </div>
+            </div>
+        </div>  
+        
+
+    </section>
+    <footer>
+        <div id="contact" class="footer-content">
+            <div class="footer-contacts">
+                <img class="logo-footer" src="/Assets/photos/VL Imports _ Arquivos/Logo Horizontal/VL Horizontal White Logo.png" alt="">
+                <p>Levanta sua autoestima com <br/>camisas de time e calçados🔥✅</p>
+
+                <div class="footer-social-media">
+                    <a href="https://www.instagram.com/vanlumeimports_/" target="_blank" class="footer-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/@vanlumeimports?lang=pt-BR" class="footer-link"><i class='bx bxl-tiktok' ></i></a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Menu</h3>
+                </li>
+                <li>
+                    <a href="/index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="/Camisas.html" class="footer-link">Camisas</a>
+                </li>
+                <li>
+                    <a href="/Tenis.html" class="footer-link">Calçados</a>
+                </li>
+                <li>
+                    <a href="/Rastreio.html" class="footer-link">Rastreio de Produtos</a>
+                </li>
+                <li>
+                    <a href="/revendedor.html" class="footer-link">Seja Revendedor</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li><h3>Contatos</h3></li> 
+                <li class="footer-link-contact"><a href="HTTPS://wa.me/5581987221825?text=Ola+Pedro,+venho+do+site+e+Teria+interesse+nos+seus+produtos!" target="_blank"><i class='bx bxl-whatsapp' ></i><p>(81) 9 87221825</p></a></li>
+                <li class="footer-link-contact"><a href="HTTPS://wa.me/5581992558637?text=Ola+João,+venho+do+site+e+Teria+interesse+nos+seus+produtos!" target="_blank"><i class='bx bxl-whatsapp' ></i><p>(81) 9 92558637</p></a></li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h3>Fale Conosco</h3>
+                <p>Complete o formulário e responderemos em até 24h</p>
+                <form action="https://formsubmit.co/vanlumeimports@gmail.com" method="POST">
+                    <input type="text" name="Nome" placeholder="Nome" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="tel" name="Telefone" placeholder="(99) 9999-9999" required>
+                    <textarea name="Mensagem" placeholder="Escreva o modelo do produto que deseja..."></textarea>
+                    <input class="submit" type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+        <div class="Copyright">
+            <p>Developed Pedro Van-Lume</p>
+            <h1>Copyright<i class='bx bx-copyright' ></i></h1>
+        </div>
+    </footer>
+    
+    <script src="/Assets/js/script.js"></script>
+</body>
+</html>

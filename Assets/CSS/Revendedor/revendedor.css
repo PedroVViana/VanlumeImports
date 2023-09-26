@@ -1,0 +1,300 @@
+.Container-revendedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.Container-revendedor .content, .perguntas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    width: 85%;
+}
+
+.Container-revendedor .content h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #0277f3;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.Container-revendedor .content p {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.Container-revendedor .content p span {
+    color: #013179;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.Container-revendedor .content p:nth-child(3) {
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.Varejo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.Varejo .Detals-Varejo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Varejo .Detals-Varejo:nth-child(1),
+.Varejo .Detals-Varejo:nth-child(4) {
+    margin-top: 50px;
+}
+
+.Varejo .Detals-Varejo h2 {
+    font-size: 28px;
+    color: #013179;
+}
+
+.Varejo .Detals-Varejo h3 {
+    font-size: 20px;
+    color: #0277f3;
+}
+
+.Varejo .Detals-Varejo p {
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+}
+
+.precos-varejo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px;
+    width: 80%;
+}
+
+.precos-varejo .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.precos-varejo .card:hover {
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
+    background: #fff;
+    transition: 0.5s;
+}
+
+
+.precos-varejo .card img {
+    width: 110px;
+}
+
+.custom-btn {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 50px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 15px;
+  }
+
+  .custom-btn a {
+    color: #fff;
+    font-size: 21px;
+  }
+  
+  .btn-2 {
+    background: #004dff;
+    background: linear-gradient(0deg, #004dff 0%, #004dff 100%);
+    border: none;
+  }
+  
+  .btn-2:before {
+    height: 0%;
+    width: 2px;
+  }
+  
+  .btn-2:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+  
+  .perguntas h2, .pedidoMin h2 {
+    font-size: 23px;
+    color: #0277f3;
+    margin-bottom: 30px;
+  }
+
+  .perguntas img, .pedidoMin img {
+    width: 100px;
+    margin: 20px;
+  }
+
+  .perguntas ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .perguntas span {
+    font-weight: 900;
+  }
+
+  .perguntas ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
+  }
+
+  .perguntas ul li:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+  }
+
+  .perguntas ul li h3 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 100px;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .perguntas ul li p, .pedidoMin p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 900;
+    z-index: 1;
+  }
+
+  .perguntas ul li p span {
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+ .pedidoMin {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px;
+  gap: 20px;
+ }
+
+ .pedidoMin p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.prazos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.garantia {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 50px;
+  gap: 20px;
+  background: url(/Assets/photos/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
+}
+
+@media (max-width:800px) {
+
+  .Container-revendedor .content, .perguntas {
+    width: 90%;
+  }
+
+  .Container-revendedor .content p {
+    font-size: 16px;
+  }
+
+  .perguntas h2, .pedidoMin h2 {
+    font-size: 20px;
+    color: #0277f3;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+
+  .Container-revendedor .content p span {
+    font-size: 16px;
+  }
+
+  .prazos {
+    flex-wrap: wrap;
+  }
+
+  .garantia {
+    width: 100%;
+  }
+}

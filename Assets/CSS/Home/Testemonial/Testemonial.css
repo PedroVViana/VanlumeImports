@@ -1,0 +1,78 @@
+.testemonial {
+    position: relative;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .testemonial .testi-content {
+    position: relative;
+    background: url(/Assets/photos/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.359);
+  }
+
+  .testemonial .testi-content .content-Reviews {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .testemonial .testi-content .content-Reviews h2,
+  .testemonial .testi-content .content-Reviews h3 {
+    font-size: 18px;
+  }
+
+  .testemonial .testi-content .content-Reviews p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .testemonial img {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+@media (max-width:800px) {
+    .testemonial .testi-content .content-Reviews {
+        position: relative;
+        width: 300px;
+        padding: 10px;
+      }
+
+      .testemonial .testi-content .content-Reviews h2,
+      .testemonial .testi-content .content-Reviews h3 {
+        font-size: 14px;
+      }
+    
+      .testemonial .testi-content .content-Reviews p {
+        text-align: justify;
+        font-size: 12px;
+      }
+    
+      .testemonial img {
+        height: 170px;
+        width: 170px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+}

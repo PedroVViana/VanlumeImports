@@ -1,0 +1,126 @@
+.offersSegurity {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+  }
+  .offersSegurity h2 {
+    position: relative;
+    font-size: 33px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+
+  .offersSegurity .seguranca {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .offersSegurity .seguranca img {
+    position: relative;
+    background: url(/Assets/photos/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.082);
+  }
+
+  .offersSegurity .seguranca .content-seg {
+    position: relative;
+  }
+
+  .offersSegurity .seguranca .content-seg ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .offersSegurity .seguranca .content-seg ul h4 {
+    position: relative;
+    font-size: 30px;
+    color: #174587;
+    text-align: center;
+  }
+
+  .offersSegurity .seguranca .content-seg ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .offersSegurity .seguranca .content-seg ul li i {
+    position: relative;
+    padding: 15px;
+    background: linear-gradient(135deg, #3c8ce7,#00eaff);
+    border-radius: 50%;
+    font-size: 60px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.138);
+  }
+
+  .offersSegurity .seguranca .content-seg ul li h3 {
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.126);
+    background: url(/Assets/photos/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  @media (max-width:800px) {
+    .offersSegurity {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0;
+      }
+      .offersSegurity h2 {
+        position: relative;
+        font-size: 23px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        text-align: center;
+      }
+    
+      .offersSegurity .seguranca {
+        flex-direction: column;
+      }
+    
+      .offersSegurity .seguranca img {
+        width: 250px;
+      }
+    
+      .offersSegurity .seguranca .content-seg ul h4 {
+        font-size: 18px;
+        text-align: center;
+      }
+    
+      .offersSegurity .seguranca .content-seg ul li h3 {
+        padding: 10px 10px;
+      }
+  }

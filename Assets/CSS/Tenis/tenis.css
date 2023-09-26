@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+.tenis {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px auto;   
+    padding: 100px 0;
+    width: 100%;
+    min-height: 100vh; 
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tenis .box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}
+
+.tenis .box .marca {
+    position: absolute;
+    right: 0;
+    width: 450px;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nike .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cards * {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.card {
+    width: 16em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2)
+    0 7px 29px 0px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    margin: 2em; 
+}
+
+.card img {
+    width: 15em;
+    top: -1em;
+    left: 5em;
+    position: absolute;
+    right: -4em;
+    filter: drop-shadow(
+        0 10px 25px rgba(0,0,0,0.5)
+    );
+}
+
+.content {
+    padding: 1em;
+}
+
+.card h2 {
+    color: #fff;
+    margin: 0 0 0 0.8em;
+    margin-top: -10px;
+    z-index: 1;
+    text-shadow: rgba(100, 100, 111, 0.2)
+    0 7px 29px 0px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    font-family: 'Inter', sans-serif;
+}
+
+.img-fundo .logo {
+    position: relative;
+    opacity: .4;
+}
+
+.banner {
+    height: 15em;
+    background: linear-gradient(90deg, #fb3854 0%, #901026 100%);
+    width: 100%;
+    padding-top: 3em;
+    border-radius: 10px 10px 50% 50%;
+    overflow: hidden;
+}
+
+.cart {
+    background: linear-gradient(90deg,#fb3854 0%, #901026 100%);
+    padding: 1em 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 2em;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(251, 56, 84, 0.2);
+    cursor: pointer;
+}
+
+.pop {
+    transform: translateZ(20px);
+}
+
+ /* ============ Nike ================ */
+
+.nike .cards .card:nth-child(1) img {
+    width: 14em;
+    top: -1em;
+    left: 6em;
+}
+
+.nike .cards .card:nth-child(2) img {
+    width: 17em;
+    top: 2em;
+    left: 3em;
+}
+
+.nike .cards .card:nth-child(2) .cart, 
+.nike .cards .card:nth-child(2) .banner {
+    background: linear-gradient(90deg,#385cfb 0%, #102790 100%);
+}
+
+.nike .cards .card:nth-child(3) img {
+    width: 17em;
+    top: 5em;
+    left: 3em;
+}
+
+.nike .cards .card:nth-child(3) .cart, 
+.nike .cards .card:nth-child(3) .banner {
+    background: linear-gradient(90deg,#000000 0%, #5e5e5e 100%);
+}
+
+.nike .cards .card:nth-child(4) img {
+    width: 19em;
+    top: 5em;
+    left: 3em;
+}
+
+.nike .cards .card:nth-child(4) .cart, 
+.nike .cards .card:nth-child(4) .banner {
+    background: linear-gradient(90deg,#007bc2 0%, #3dabd6 100%);
+}
+
+.nike .cards .card:nth-child(5) img {
+    width: 19em;
+    top: 5em;
+    left: 3em;
+}
+
+.nike .cards .card:nth-child(5) .cart, 
+.nike .cards .card:nth-child(5) .banner {
+    background: linear-gradient(90deg,#6d6d6d 0%, #b9b9b9 100%);
+}
+
+ /* ============ Adidas ================ */
+
+.adidas .cards .card:nth-child(1) img {
+    width: 15em;
+    top: 3em;
+    left: 4em;
+}
+
+.adidas .cards .card:nth-child(1) .cart, 
+.adidas .cards .card:nth-child(1) .banner {
+    background: linear-gradient(90deg,#fce112 0%, #ffee69 100%);
+}
+
+.adidas .cards .card:nth-child(2) img {
+    width: 14em;
+    top: 4em;
+    left: 5em;
+}
+
+.adidas .cards .card:nth-child(2) .cart, 
+.adidas .cards .card:nth-child(2) .banner {
+    background: linear-gradient(90deg,#6d6d6d 0%, #b9b9b9 100%);
+}
+
+.adidas .cards .card:nth-child(3) img {
+    width: 18em;
+    top: 4em;
+    left: 2em;
+}
+
+.adidas .cards .card:nth-child(3) .cart, 
+.adidas .cards .card:nth-child(3) .banner {
+    background: linear-gradient(90deg,#000000 0%, #5e5e5e 100%);
+}
+
+.adidas .cards .card:nth-child(4) img {
+    width: 16em;
+    top: 3em;
+    left: 3em;
+}
+
+.adidas .cards .card:nth-child(4) .cart, 
+.adidas .cards .card:nth-child(4) .banner {
+    background: linear-gradient(90deg,#007bc2 0%, #3dabd6 100%);
+}

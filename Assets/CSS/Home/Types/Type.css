@@ -1,0 +1,90 @@
+.tipos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 50vh;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.tipos .cards-type {
+    position: relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+    background: linear-gradient(135deg, #3c8ce7,#00eaff);
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.359);
+}
+
+.tipos .cards-type .card-type  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tipos .cards-type .card-type img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.359);
+    transition: 0.5s;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.tipos .cards-type .card-type img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.tipos .cards-type .card-type h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+}
+
+ 
+@media (max-width:800px) {
+    .tipos {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .tipos .cards-type {
+      padding: 20px;
+  }
+
+      .tipos .cards-type .card-type img {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        filter: grayscale(0%);
+    }
+
+.tipos .cards-type .card-type img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+    .tipos .cards-type .card-type h2 {
+      font-size: 16px;
+    }
+
+}
