@@ -1,10 +1,18 @@
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .Container-revendedor {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 1200px;
     min-height: 100vh;
     padding: 40px;
 }
@@ -26,6 +34,7 @@
     color: #0277f3;
     margin-bottom: 50px;
     margin-top: 50px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.301);
 }
 
 .Container-revendedor .content p {
@@ -37,86 +46,13 @@
     color: #013179;
     font-weight: bolder;
     font-size: 24px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.301);
 }
 
 .Container-revendedor .content p:nth-child(3) {
     font-weight: 900;
     margin-top: 10px;
 }
-
-.Varejo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-.Varejo .Detals-Varejo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.Varejo .Detals-Varejo:nth-child(1),
-.Varejo .Detals-Varejo:nth-child(4) {
-    margin-top: 50px;
-}
-
-.Varejo .Detals-Varejo h2 {
-    font-size: 28px;
-    color: #013179;
-}
-
-.Varejo .Detals-Varejo h3 {
-    font-size: 20px;
-    color: #0277f3;
-}
-
-.Varejo .Detals-Varejo p {
-    font-size: 13px;
-    color: #333;
-    font-weight: 600;
-}
-
-.precos-varejo {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 50px;
-    width: 80%;
-}
-
-.precos-varejo .card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 15px;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.precos-varejo .card:hover {
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
-    background: #fff;
-    transition: 0.5s;
-}
-
-
-.precos-varejo .card img {
-    width: 110px;
-}
-
 .custom-btn {
     color: #fff;
     border-radius: 5px;
@@ -160,13 +96,19 @@
   }
   
   .perguntas h2, .pedidoMin h2 {
-    font-size: 23px;
+    font-size: 30px;
     color: #0277f3;
     margin-bottom: 30px;
+    text-shadow: 4px 3px 0px #7a7a7a2c;
   }
 
   .perguntas img, .pedidoMin img {
     width: 100px;
+    margin: 20px;
+  }
+
+  .pedidoMin .codigo {
+    width: 280px;
     margin: 20px;
   }
 
@@ -177,7 +119,7 @@
     align-items: center;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -186,36 +128,20 @@
   }
 
   .perguntas ul li {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 200px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    transition: .5s;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
-  }
-
-  .perguntas ul li:hover {
-    transform: translateY(-10px);
-    transition: .5s;
+   position: relative;
+   display: flex;
   }
 
   .perguntas ul li h3 {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 100px;
-    opacity: 0.2;
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 10px;
+    margin-bottom: 10px;
     z-index: 0;
   }
 
   .perguntas ul li p, .pedidoMin p {
     font-size: 16px;
-    text-align: center;
     font-weight: 900;
     z-index: 1;
   }
@@ -268,10 +194,34 @@
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
 }
 
-@media (max-width:800px) {
+.cards {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  .Container-revendedor .content, .perguntas {
-    width: 90%;
+.cards img {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.425);
+}
+
+@media (max-width:800px) {
+  .Container-revendedor {
+    width: 350px;
+  }
+
+  .cards img {
+    width: 320px;
+  }
+  .Container-revendedor .content, .perguntas{
+    width: 100%;
   }
 
   .Container-revendedor .content p {
@@ -284,7 +234,6 @@
     margin-bottom: 30px;
     text-align: center;
   }
-
 
   .Container-revendedor .content p span {
     font-size: 16px;
